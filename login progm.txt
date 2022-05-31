@@ -1,0 +1,37 @@
+•	Login program
+#include <iostream>
+using namespace std;
+int main()
+{
+    string n,p;
+    cout<<"enter user name: ";
+    cin>>n;
+    cout<<"\nenter password: ";
+    cin>>p;
+    if (p=="password" && n=="root")
+    {
+        cout<<"success";
+    }else{
+        cout<<"fail";
+    }
+    return 0;
+}
+
+•	Otp program
+#include<iostream>
+using namespace std;
+int main()
+{	
+	int otp,uotp;
+	otp = rand()%5555;
+	cout << "Otp is:  "<< otp;
+	cout << "\nenter otp:";
+	cin >> uotp;
+	if(otp != uotp){
+			cout <<"fail";
+	} 
+	else{
+			cout <<"success";
+	}
+	return 0;
+}
